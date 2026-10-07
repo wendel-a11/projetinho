@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Biblioteca</h1>
+
+        <nav>
+            <a href="livros.html">Livros</a>
+            <a href="cadastrar-livro.html">Cadastrar livro</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Livros cadastrados</h2>
+
+        <a href="cadastrar-livro.html">
+            <button>Novo livro</button>
+        </a>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Ano</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Dom Casmurro</td>
+                    <td>Machado de Assis</td>
+                    <td>1899</td>
+                    <td>Romance</td>
+                    <td>5</td>
+
+                    <td>
+                        <a href="editar-livro.html">
+                            <button>Editar</button>
+                        </a>
+
+                        <button onclick="excluirLivro()">Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>O Hobbit</td>
+                    <td>J.R.R. Tolkien</td>
+                    <td>1937</td>
+                    <td>Fantasia</td>
+                    <td>3</td>
+
+                    <td>
+                        <a href="editar-livro.html">
+                            <button>Editar</button>
+                        </a>
+
+                        <button onclick="excluirLivro()">Excluir</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
