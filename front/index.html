@@ -4,54 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Biblioteca - Login</title>
-
+    <title>Biblioteca Digital</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="container">
+<header>
+    <h1>📚 Biblioteca Digital</h1>
 
-        <h1>Biblioteca</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="livros.html">Livros</a>
+        <a href="emprestimos.html">Empréstimos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
-        <h2>Login</h2>
+<main class="hero">
 
-        <form id="formLogin">
-
-            <label for="email">E-mail:</label>
-
-            <input 
-                type="email" 
-                id="email" 
-                required
-            >
-
-            <label for="senha">Senha:</label>
-
-            <input 
-                type="password" 
-                id="senha" 
-                required
-            >
-
-            <button type="submit">
-                Entrar
-            </button>
-
-        </form>
+    <div>
+        <h2>Bem-vindo à Biblioteca Digital</h2>
 
         <p>
-            Ainda não possui uma conta?
-            <a href="cadastro.html">Cadastre-se</a>
+            Sistema simples para cadastro,
+            consulta e gerenciamento de livros.
         </p>
 
+        <a href="livros.html" class="botao">
+            Ver livros
+        </a>
     </div>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+</main>
+
+<footer>
+    <p>© 2026 Biblioteca Digital</p>
+</footer>
 
 </body>
-
 </html>
