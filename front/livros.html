@@ -1,89 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca - Livros</title>
+    <title>Livros</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Biblioteca</h1>
+<header>
+    <h1>📚 Biblioteca Digital</h1>
 
-        <nav>
-            <a href="livros.html">Livros</a>
-            <a href="cadastrar-livro.html">Cadastrar livro</a>
-            <a href="index.html">Sair</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="livros.html">Livros</a>
+        <a href="emprestimos.html">Empréstimos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
-    <main>
+<main class="container">
 
-        <h2>Livros cadastrados</h2>
+    <h2>Lista de Livros</h2>
 
-        <a href="cadastrar-livro.html">
-            <button>Novo livro</button>
-        </a>
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="🔎 Pesquisar por livro ou autor..."
+    >
 
-        <table>
+    <div id="listaLivros"></div>
 
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Autor</th>
-                    <th>Ano</th>
-                    <th>Categoria</th>
-                    <th>Quantidade</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
+</main>
 
-            <tbody>
+<footer>
+    <p>© 2026 Biblioteca Digital</p>
+</footer>
 
-                <tr>
-                    <td>1</td>
-                    <td>Dom Casmurro</td>
-                    <td>Machado de Assis</td>
-                    <td>1899</td>
-                    <td>Romance</td>
-                    <td>5</td>
-
-                    <td>
-                        <a href="editar-livro.html">
-                            <button>Editar</button>
-                        </a>
-
-                        <button onclick="excluirLivro()">Excluir</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>O Hobbit</td>
-                    <td>J.R.R. Tolkien</td>
-                    <td>1937</td>
-                    <td>Fantasia</td>
-                    <td>3</td>
-
-                    <td>
-                        <a href="editar-livro.html">
-                            <button>Editar</button>
-                        </a>
-
-                        <button onclick="excluirLivro()">Excluir</button>
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </main>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
